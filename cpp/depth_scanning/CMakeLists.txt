@@ -1,0 +1,14 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.2)
+
+SET(EXECUTABLE_OUTPUT_PATH ../../depth_scanning/bin)
+SET(SUBPROJECT_NAME Scan3D)
+
+ADD_EXECUTABLE( ${SUBPROJECT_NAME}
+    src/main_scan_3d.cpp
+)
+
+TARGET_LINK_LIBRARIES( ${SUBPROJECT_NAME}
+    sdf_tracker_lib
+    ${OpenCV_LIBS}
+    mc_lib
+)

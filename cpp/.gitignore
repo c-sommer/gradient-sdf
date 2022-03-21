@@ -1,0 +1,6 @@
+build/
+results/
+*/bin/
+*.sdf
+*.vis
+*.ply
