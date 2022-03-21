@@ -87,3 +87,18 @@ To generate the SDF and the stored Gradient-SDF vectors, you need to run the C++
 ### Gradient analysis
 
 Adapt the `path` variable in `GradientAnalysisSpheres.m` to your `--output` path from the SDF generation and adapt the `sz`, `dmin`, and `dmax` variables accordingly (see file). Then run the script to generate the plot according to Figure 3 in the paper. In addition to Gradient-SDF and central difference vectors, by default, also forward and backward finite difference curves will be plotted. As they are a lot worse than the central differences and clutter the plot, we decided to exclude them in the paper. This can be achieved by commenting the respective lines (see file).
+
+## License and Publication
+
+Our code is released under the BSD-3 license, for more details please see the license file. Also note the different licenses of the submodules in the folder [`cpp/third/`](cpp/third/).
+
+Please cite our paper when using the code in a scientific project. You can copy-paste the following BibTex entry:
+
+```
+@inproceedings{sommersang2022,
+    title   = {Gradient-SDF: A Semi-Implicit Surface Representation for 3D Reconstruction},
+    author  = {Sommer, Christiane and Sang, Lu and Schubert, David and Cremers, Daniel},
+    booktitle = {IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year    = {2022}
+}
+```
